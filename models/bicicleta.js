@@ -12,8 +12,9 @@ Bicicleta.allBicis = [];
 Bicicleta.add = function(aBici){
         Bicicleta.allBicis.push(aBici);
 }
-var a = new Bicicleta(1, 'rojo', 'urbana', [-34.6012424,-58.3861497]);
-var b = new Bicicleta(2, 'blanco', 'urbana', [-34.596932,-58.3808287]);
+
+var a = new Bicicleta(1, 'rojo', 'urbana', [3.4282738, -76.4700004,17]);
+var b = new Bicicleta(2, 'blanco', 'urbana', [3.4282738, -76.4700004]);
 
 Bicicleta.add(a);
 Bicicleta.add(b);
