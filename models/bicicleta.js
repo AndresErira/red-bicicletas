@@ -13,11 +13,11 @@ Bicicleta.add = function(aBici){
         Bicicleta.allBicis.push(aBici);
 }
 
-var a = new Bicicleta(1, 'rojo', 'urbana', [3.4282738, -76.4700004,17]);
+/*var a = new Bicicleta(1, 'rojo', 'urbana', [3.4282738, -76.4700004,17]);
 var b = new Bicicleta(2, 'blanco', 'urbana', [3.4282738, -76.4700004]);
 
 Bicicleta.add(a);
-Bicicleta.add(b);
+Bicicleta.add(b);*/
 
 Bicicleta.findById = function(aBiciId){
     var aBici = Bicicleta.allBicis.find(x=>x.id==aBiciId);
@@ -28,7 +28,7 @@ Bicicleta.findById = function(aBiciId){
         throw new Error(`no existe una bicicleta con el id ${aBiciId} o ${aBici}`);
 }
 Bicicleta.removeById = function(aBiciId){
-    Bicicleta.findById(aBiciId);
+   // Bicicleta.findById(aBiciId); Esta line no es necesaria ya que el for hace la busqueda y compara para eliminar
     for(var i=0; i<Bicicleta.allBicis.length; i++){
         if(Bicicleta.allBicis[i].id == aBiciId){
             Bicicleta.allBicis.splice(i, 1);
